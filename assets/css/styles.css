@@ -129,7 +129,7 @@ button{
 
 /*=============== LAYOUT ===============*/
 .container{
-  max-width: 968px;
+  max-width: 1100px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -145,7 +145,6 @@ button{
 /*=============== HEADER ===============*/
 .header{
   width: 100%;
-  background: var(--body-color); 
   position: fixed;
   top: 0;
   left: 0;
@@ -284,6 +283,14 @@ button{
   position: absolute;
   right: .5rem;
 }
+img.second-shadow{
+  /* top: -0px; */
+  left: -20px;
+  position: absolute;
+  width: 650px;
+  height: 750px;
+  opacity: .9;
+}
 
 .home__details-title,
 .home__details-subtitle{
@@ -316,11 +323,10 @@ button{
   
 }
 .home__buttons .button{
-  transform: rotate(-20deg);
-  transform: skewY(-10deg);
+  clip-path: polygon(15% 0%, 5% 100%, 87% 88%, 99% 90%, 94% 4%);
   margin-left: 20px;
+  border-radius: 13px;
   background: #a8de93;
-  border-radius: 10px 10px 5px 5px;
   color: #000;
 
 }
@@ -332,6 +338,7 @@ button{
   background: transparent !important;
   border: 2px solid #a8de93; 
   color: white !important;
+  
   /* justify-content: center; */
 }
 /* Swiper Class */
@@ -419,6 +426,8 @@ button{
 .scrollup__icon{
   font-size: 2rem;
   color: var(--title-color);
+  position: absolute;
+  right:  .8rem;
 }
 
 .scrollup:hover{
@@ -427,6 +436,7 @@ button{
 .scroll-text{
   position: absolute;
   bottom: 4%;
+  text-align: center;
 }
 
 /* Show Scroll Up*/
